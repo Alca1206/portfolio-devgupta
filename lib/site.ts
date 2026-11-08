@@ -10,6 +10,6 @@ const rawUrl =
 
 export const siteConfig = {
   url: rawUrl.replace(/\/$/, ""), // no trailing slash
-  title: `${profile.name} | ${profile.brand}`,
+  title: `${profile.name} | ${profile.role}`,
   description: `Portfolio of ${profile.name}, a ${profile.role} working on machine learning, deep learning, and applied AI.`,
 };

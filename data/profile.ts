@@ -4,7 +4,7 @@ import type { Profile } from "./types";
 // A value of null means "not available yet" and the site shows "Coming soon".
 export const profile: Profile = {
   name: "Dev Gupta",
-  brand: "Cosmic Intelligence Lab",
+  brand: "Dev Gupta",
   role: "Data Science master's student",
   focusAreas: ["Machine Learning", "Deep Learning", "Applied AI"],
   heroHeadline: {

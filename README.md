@@ -1,4 +1,4 @@
-# Cosmic Intelligence Lab
+# Dev Gupta: portfolio
 
 Portfolio site built with Next.js (App Router), TypeScript and Tailwind.
 

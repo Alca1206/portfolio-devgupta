@@ -10,6 +10,7 @@
   --color-ink-muted: #a1a9bc;      /* secondary text */
   --color-violet: #9b8cff;         /* accent 1 */
   --color-cyan: #55d6e8;           /* accent 2 */
+  --color-accent2: #ff9ecb;        /* partner of the accent: comet tail end (set per project) */
   --color-line: #232c44;           /* subtle borders */
 
   /* Fluid type scale: sizes grow smoothly between phone and desktop */

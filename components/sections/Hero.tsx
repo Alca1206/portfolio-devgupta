@@ -21,7 +21,7 @@ export default function Hero() {
             <p className="mt-6 max-w-xl text-lead text-ink-muted">{heroText}</p>
 
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-              <Button href="/projects">Explore My Work</Button>
+              <Button href="/projects" internal>Explore My Work</Button>
               <Button href={contact.resume} variant="secondary">
                 View Résumé
               </Button>

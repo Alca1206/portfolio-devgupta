@@ -1,8 +1,11 @@
+import Link from "next/link";
 import type { ReactNode } from "react";
 
 type ButtonProps = {
   /** null = the destination doesn't exist yet, so we render a disabled button. */
   href: string | null;
+  /** A page on this site. Uses Next's Link so the GitHub Pages sub-folder prefix is added. */
+  internal?: boolean;
   variant?: "primary" | "secondary";
   size?: "sm" | "md";
   children: ReactNode;
@@ -24,6 +27,7 @@ const sizes = {
 
 export default function Button({
   href,
+  internal = false,
   variant = "primary",
   size = "md",
   children,
@@ -44,6 +48,14 @@ export default function Button({
         {children}
         <span className="sr-only"> (coming soon)</span>
       </button>
+    );
+  }
+
+  if (internal) {
+    return (
+      <Link href={href} className={styles}>
+        {children}
+      </Link>
     );
   }
 

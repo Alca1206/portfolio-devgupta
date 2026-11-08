@@ -1,0 +1,10 @@
+# Questions about "Unleashing the Potential of Spiking Neural Networks with Dynamic Confidence".
+# One per line. Lines starting with # are ignored. The script adds 3 off-topic questions itself.
+What is Dynamic Confidence and what problem does it address?
+What is confidence saturation and how do the authors prevent it?
+How is the confidence threshold chosen?
+Which datasets and network architectures were used in the experiments?
+How much latency does Dynamic Confidence save on ImageNet with ResNet-50?
+What accuracy could an ideal decision-making agent reach on ImageNet and in how many time steps?
+On which GPU were the latency measurements made?
+What did the authors measure on Intel Loihi neuromorphic chips?

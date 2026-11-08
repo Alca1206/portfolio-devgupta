@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/site";
 import { projects } from "@/data/projects";
+import { playgroundEntries } from "@/lib/playground";
 
 // Tells search engines which pages exist.
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -16,7 +17,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "monthly" as const,
     priority: path === "" ? 1 : 0.8,
   }));
-  return [...pages, ...detailPages];
+  const demoPages = ["/playground/calibration", ...playgroundEntries().map((e) => `/playground/${e.project.slug}`)].map((path) => ({
+    url: `${siteConfig.url}${path}`,
+    changeFrequency: "monthly" as const,
+    priority: 0.5,
+  }));
+  return [...pages, ...detailPages, ...demoPages];
 }
 
 // Needed for the static export: this file is turned into a plain file at build time.

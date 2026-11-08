@@ -1,8 +1,8 @@
 import { profile } from "./profile";
-import { categories } from "./categories";
 import { projectPath, projects } from "./projects";
 import { researchEntries } from "./research";
 import { skillGroups } from "./skills";
+import { categories } from "./categories";
 import { buildSky, scatter, type DecorStar } from "@/lib/sky";
 
 // The star maps. Each map ("graph") has a hub star in the middle and stars

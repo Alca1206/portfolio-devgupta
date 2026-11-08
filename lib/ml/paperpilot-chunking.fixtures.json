@@ -1,0 +1,263 @@
+[
+ {
+  "name": "prose-three-pages",
+  "pages": [
+   "Neural networks learn patterns from examples. They adjust many numbers, called weights, so that their outputs get closer to the answers in the training data! Does more data always help? Not always: noisy labels can hurt, as shown by Smith et al. in Fig. 3. A held-out test set estimates how the model behaves on unseen cases. Researchers therefore never tune on it. Short one. Another short one. This sentence is a little longer than the others, so that chunk boundaries move around when the size limit changes.",
+   "ples. They adjust many numbers, called weights, so that their outputs get closer to the answers in the training data! Does more data always help? Not always: noisy labels can hurt, as shown by Smith et al. in Fig. 3. A held-out test set estimates how the model behaves on unseen cases. Researchers therefore never tune on it. Short one. Another short one. This sentence is a little longer than the others, so that chunk boundaries move around when the size limit changes.",
+   "Page three is tiny. Ok."
+  ],
+  "max": 200,
+  "overlap": 1,
+  "min": 30,
+  "chunks": [
+   {
+    "id": "p1-c1",
+    "page": 1,
+    "text": "Neural networks learn patterns from examples. They adjust many numbers, called weights, so that their outputs get closer to the answers in the training data! Does more data always help?"
+   },
+   {
+    "id": "p1-c2",
+    "page": 1,
+    "text": "Does more data always help? Not always: noisy labels can hurt, as shown by Smith et al. in Fig. 3. A held-out test set estimates how the model behaves on unseen cases."
+   },
+   {
+    "id": "p1-c3",
+    "page": 1,
+    "text": "A held-out test set estimates how the model behaves on unseen cases. Researchers therefore never tune on it. Short one. Another short one."
+   },
+   {
+    "id": "p1-c4",
+    "page": 1,
+    "text": "Another short one. This sentence is a little longer than the others, so that chunk boundaries move around when the size limit changes."
+   },
+   {
+    "id": "p2-c1",
+    "page": 2,
+    "text": "ples. They adjust many numbers, called weights, so that their outputs get closer to the answers in the training data! Does more data always help?"
+   },
+   {
+    "id": "p2-c2",
+    "page": 2,
+    "text": "Does more data always help? Not always: noisy labels can hurt, as shown by Smith et al. in Fig. 3. A held-out test set estimates how the model behaves on unseen cases."
+   },
+   {
+    "id": "p2-c3",
+    "page": 2,
+    "text": "A held-out test set estimates how the model behaves on unseen cases. Researchers therefore never tune on it. Short one. Another short one."
+   },
+   {
+    "id": "p2-c4",
+    "page": 2,
+    "text": "Another short one. This sentence is a little longer than the others, so that chunk boundaries move around when the size limit changes."
+   }
+  ]
+ },
+ {
+  "name": "prose-no-overlap",
+  "pages": [
+   "Neural networks learn patterns from examples. They adjust many numbers, called weights, so that their outputs get closer to the answers in the training data! Does more data always help? Not always: noisy labels can hurt, as shown by Smith et al. in Fig. 3. A held-out test set estimates how the model behaves on unseen cases. Researchers therefore never tune on it. Short one. Another short one. This sentence is a little longer than the others, so that chunk boundaries move around when the size limit changes."
+  ],
+  "max": 120,
+  "overlap": 0,
+  "min": 30,
+  "chunks": [
+   {
+    "id": "p1-c1",
+    "page": 1,
+    "text": "Neural networks learn patterns from examples."
+   },
+   {
+    "id": "p1-c2",
+    "page": 1,
+    "text": "They adjust many numbers, called weights, so that their outputs get closer to the answers in the training data!"
+   },
+   {
+    "id": "p1-c3",
+    "page": 1,
+    "text": "Does more data always help? Not always: noisy labels can hurt, as shown by Smith et al. in Fig. 3."
+   },
+   {
+    "id": "p1-c4",
+    "page": 1,
+    "text": "A held-out test set estimates how the model behaves on unseen cases. Researchers therefore never tune on it. Short one."
+   },
+   {
+    "id": "p1-c6",
+    "page": 1,
+    "text": "This sentence is a little longer than the others, so that chunk boundaries move around when the size limit changes."
+   }
+  ]
+ },
+ {
+  "name": "prose-overlap-two",
+  "pages": [
+   "Neural networks learn patterns from examples. They adjust many numbers, called weights, so that their outputs get closer to the answers in the training data! Does more data always help? Not always: noisy labels can hurt, as shown by Smith et al. in Fig. 3. A held-out test set estimates how the model behaves on unseen cases. Researchers therefore never tune on it. Short one. Another short one. This sentence is a little longer than the others, so that chunk boundaries move around when the size limit changes.",
+   "Neural networks learn patterns from examples. They adjust many numbers, called weights, so that their outputs get closer to the answers in the training data! Does more data always help? Not always: noisy labels can hurt, as shown by Smith et al. in Fig. 3. A held-out test set estimates how the model behaves on unseen cases. Researchers therefore never tune on it. Short one. Another short one. This sentence is a little longer than the others, so that chunk boundaries move around when the size limit changes."
+  ],
+  "max": 160,
+  "overlap": 2,
+  "min": 30,
+  "chunks": [
+   {
+    "id": "p1-c1",
+    "page": 1,
+    "text": "Neural networks learn patterns from examples. They adjust many numbers, called weights, so that their outputs get closer to the answers in the training data!"
+   },
+   {
+    "id": "p1-c2",
+    "page": 1,
+    "text": "Does more data always help? Not always: noisy labels can hurt, as shown by Smith et al. in Fig. 3."
+   },
+   {
+    "id": "p1-c3",
+    "page": 1,
+    "text": "in Fig. 3. A held-out test set estimates how the model behaves on unseen cases. Researchers therefore never tune on it. Short one. Another short one."
+   },
+   {
+    "id": "p1-c4",
+    "page": 1,
+    "text": "Short one. Another short one. This sentence is a little longer than the others, so that chunk boundaries move around when the size limit changes."
+   },
+   {
+    "id": "p2-c1",
+    "page": 2,
+    "text": "Neural networks learn patterns from examples. They adjust many numbers, called weights, so that their outputs get closer to the answers in the training data!"
+   },
+   {
+    "id": "p2-c2",
+    "page": 2,
+    "text": "Does more data always help? Not always: noisy labels can hurt, as shown by Smith et al. in Fig. 3."
+   },
+   {
+    "id": "p2-c3",
+    "page": 2,
+    "text": "in Fig. 3. A held-out test set estimates how the model behaves on unseen cases. Researchers therefore never tune on it. Short one. Another short one."
+   },
+   {
+    "id": "p2-c4",
+    "page": 2,
+    "text": "Short one. Another short one. This sentence is a little longer than the others, so that chunk boundaries move around when the size limit changes."
+   }
+  ]
+ },
+ {
+  "name": "big-chunks",
+  "pages": [
+   "Neural networks learn patterns from examples. They adjust many numbers, called weights, so that their outputs get closer to the answers in the training data! Does more data always help? Not always: noisy labels can hurt, as shown by Smith et al. in Fig. 3. A held-out test set estimates how the model behaves on unseen cases. Researchers therefore never tune on it. Short one. Another short one. This sentence is a little longer than the others, so that chunk boundaries move around when the size limit changes."
+  ],
+  "max": 800,
+  "overlap": 1,
+  "min": 30,
+  "chunks": [
+   {
+    "id": "p1-c1",
+    "page": 1,
+    "text": "Neural networks learn patterns from examples. They adjust many numbers, called weights, so that their outputs get closer to the answers in the training data! Does more data always help? Not always: noisy labels can hurt, as shown by Smith et al. in Fig. 3. A held-out test set estimates how the model behaves on unseen cases. Researchers therefore never tune on it. Short one. Another short one. This sentence is a little longer than the others, so that chunk boundaries move around when the size limit changes."
+   }
+  ]
+ },
+ {
+  "name": "long-piece",
+  "pages": [
+   "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx word0 word1 word2 word3 word4 word5 word6 word7 word8 word9 word10 word11 word12 word13 word14 word15 word16 word17 word18 word19 word20 word21 word22 word23 word24 word25 word26 word27 word28 word29 word30 word31 word32 word33 word34 word35 word36 word37 word38 word39 word40 word41 word42 word43 word44 word45 word46 word47 word48 word49 word50 word51 word52 word53 word54 word55 word56 word57 word58 word59 https://example.org/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  ],
+  "max": 80,
+  "overlap": 1,
+  "min": 30,
+  "chunks": [
+   {
+    "id": "p1-c1",
+    "page": 1,
+    "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+   },
+   {
+    "id": "p1-c2",
+    "page": 1,
+    "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx word0 word1 word2 word3 word4"
+   },
+   {
+    "id": "p1-c3",
+    "page": 1,
+    "text": "word5 word6 word7 word8 word9 word10 word11 word12 word13 word14 word15 word16"
+   },
+   {
+    "id": "p1-c4",
+    "page": 1,
+    "text": "word17 word18 word19 word20 word21 word22 word23 word24 word25 word26 word27"
+   },
+   {
+    "id": "p1-c5",
+    "page": 1,
+    "text": "word28 word29 word30 word31 word32 word33 word34 word35 word36 word37 word38"
+   },
+   {
+    "id": "p1-c6",
+    "page": 1,
+    "text": "word39 word40 word41 word42 word43 word44 word45 word46 word47 word48 word49"
+   },
+   {
+    "id": "p1-c7",
+    "page": 1,
+    "text": "word50 word51 word52 word53 word54 word55 word56 word57 word58 word59"
+   },
+   {
+    "id": "p1-c8",
+    "page": 1,
+    "text": "https://example.org/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+   },
+   {
+    "id": "p1-c9",
+    "page": 1,
+    "text": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+   },
+   {
+    "id": "p1-c10",
+    "page": 1,
+    "text": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+   }
+  ]
+ },
+ {
+  "name": "junk-page-number",
+  "pages": [
+   "12",
+   "Neural networks learn patterns from examples. They adjust many numbers, called weights, so"
+  ],
+  "max": 200,
+  "overlap": 1,
+  "min": 30,
+  "chunks": [
+   {
+    "id": "p2-c1",
+    "page": 2,
+    "text": "Neural networks learn patterns from examples. They adjust many numbers, called weights, so"
+   }
+  ]
+ },
+ {
+  "name": "unicode",
+  "pages": [
+   "Café résumé naïve — “quotes” and emoji 😀 appear here. Second sentence with 😀😀😀 more text to chunk. Third one is here too, with more words."
+  ],
+  "max": 60,
+  "overlap": 1,
+  "min": 10,
+  "chunks": [
+   {
+    "id": "p1-c1",
+    "page": 1,
+    "text": "Café résumé naïve — “quotes” and emoji 😀 appear here."
+   },
+   {
+    "id": "p1-c2",
+    "page": 1,
+    "text": "Second sentence with 😀😀😀 more text to chunk."
+   },
+   {
+    "id": "p1-c3",
+    "page": 1,
+    "text": "Third one is here too, with more words."
+   }
+  ]
+ }
+]

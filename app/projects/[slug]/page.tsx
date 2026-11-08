@@ -6,6 +6,7 @@ import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import Tag from "@/components/ui/Tag";
 import { projects } from "@/data/projects";
+import { playgroundEntry } from "@/lib/playground";
 
 const statusLabel = {
   placeholder: "Placeholder",
@@ -36,6 +37,7 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
   const project = projects.find((p) => p.slug === slug);
   const detail = project?.detail;
   if (!project || !detail) notFound();
+  const playground = playgroundEntry(project.slug);
 
   return (
     <article className="container-page py-16 md:py-24">
@@ -61,8 +63,16 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
         ))}
       </ul>
 
-      <div className="mt-8">
+      <div className="mt-8 flex flex-wrap gap-3">
         <Button href={project.repoUrl}>View source on GitHub</Button>
+        {playground && (
+          <Link
+            href={`/playground/${project.slug}`}
+            className="inline-flex items-center justify-center rounded-md border border-line px-6 py-3 font-medium text-ink transition-colors hover:border-cyan hover:text-cyan"
+          >
+            Try it in the Playground
+          </Link>
+        )}
       </div>
 
       <section className="mt-14" aria-labelledby="highlights-title">

@@ -15,9 +15,13 @@ const statusLabel: Record<Project["status"], string> = {
 export default function ProjectCard({ project }: { project: Project }) {
   const { title, summary, tags, repoUrl, status } = project;
   const detailHref = projectPath(project);
-    
+
   return (
-    <Card className="flex h-full flex-col transition-colors hover:border-violet/50">
+    <Card
+      className={`relative flex h-full flex-col transition-colors hover:border-violet/50 ${
+        detailHref ? "cursor-pointer focus-within:border-violet/50" : ""
+      }`}
+    >
       <p
         className={`w-fit rounded border px-2 py-0.5 text-xs text-ink-muted ${
           status === "placeholder" ? "border-dashed" : "border-solid"
@@ -45,7 +49,7 @@ export default function ProjectCard({ project }: { project: Project }) {
               href={repoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-ink hover:text-cyan"
+              className="relative z-10 inline-flex w-fit items-center gap-1.5 text-ink hover:text-cyan"
             >
               Source code on GitHub
               <ArrowUpRight size={16} aria-hidden="true" />
@@ -61,7 +65,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           {detailHref ? (
             <Link
               href={detailHref}
-              className="inline-flex items-center gap-1.5 text-ink hover:text-cyan"
+              className="inline-flex items-center gap-1.5 text-ink hover:text-cyan after:absolute after:inset-0 after:content-['']"
             >
               Read project details
               <ArrowUpRight size={16} aria-hidden="true" />
